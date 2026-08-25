@@ -1,6 +1,14 @@
 # Agent Hooks Protocol
 
 <p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="assets/mark-dark.svg">
+    <source media="(prefers-color-scheme: light)" srcset="assets/mark-light.svg">
+    <img src="assets/mark-light.svg" alt="Agent Hooks Protocol" width="128">
+  </picture>
+</p>
+
+<p align="center">
   <strong>Portable control points for agent actions</strong>
 </p>
 
@@ -25,15 +33,3 @@ AHP is an early **Working Draft**. The v0.1 portability floor is intentionally n
 - validate behavior with shared schemas, fixtures, and conformance tests.
 
 The TypeScript implementation is official but non-normative. The language-neutral specification remains authoritative.
-
-## Project structure
-
-- [`agent-hooks-protocol`](https://github.com/agenthooksprotocol/agent-hooks-protocol) — canonical Working Draft, schemas, proposals, fixtures, governance, and conformance assets.
-- [`typescript-sdk`](https://github.com/agenthooksprotocol/typescript-sdk) — non-normative TypeScript SDK, stdio reference implementation, fake backend, and conformance CLI.
-- [`.github`](https://github.com/agenthooksprotocol/.github) — organization profile and shared contribution templates.
-
-## Get involved
-
-Start with the [Working Draft](https://github.com/agenthooksprotocol/agent-hooks-protocol/blob/main/spec/working-draft.md), review [AHP-0001](https://github.com/agenthooksprotocol/agent-hooks-protocol/blob/main/proposals/AHP-0001.md), or join the [organization discussions](https://github.com/orgs/agenthooksprotocol/discussions). Material protocol changes follow the public [AHP proposal process](https://github.com/agenthooksprotocol/agent-hooks-protocol/blob/main/governance/AHP-PROCESS.md).
-
-Before contributing, read the guidance in the repository that owns the work. Security reports must follow that repository's security policy and must not be posted publicly.
