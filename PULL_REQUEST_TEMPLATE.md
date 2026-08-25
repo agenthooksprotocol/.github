@@ -1,18 +1,17 @@
 ## Summary
 
-<!-- What changed, and why? -->
+<!-- Describe what the change achieves in one to three terse, technical sentences. -->
 
-## Related issue
+<!-- Optional sections follow. Keep them in this order and remove any that do not add useful, supported information. -->
 
-<!-- Link an issue when applicable. -->
+## Motivation
 
-## Validation
+<!-- Explain why the change is needed and what value it provides. -->
 
-<!-- List the checks you ran and their results. -->
+## Impact
 
-## Checklist
+<!-- Describe known positive and negative effects, including the blast radius of behavioral or operational changes. -->
 
-- [ ] The change is focused and follows repository-specific guidance.
-- [ ] Tests and documentation are updated when needed.
-- [ ] Compatibility concerns and checks not run are described above.
-- [ ] The change contains no credentials or private data.
+## Technical details
+
+<!-- Document non-obvious decisions or nuances that are not already clear from the code or comments. Use a plain-English ### heading for each distinct point. -->
