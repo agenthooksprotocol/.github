@@ -1,0 +1,64 @@
+name: Bug report
+description: Report reproducible behavior that is not working as expected.
+title: "[Bug]: "
+labels: []
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thank you for helping us improve. Remove secrets and private data from all examples and logs.
+  - type: input
+    id: area
+    attributes:
+      label: Affected project or area
+      description: Name the repository, package, component, or documentation area.
+      placeholder: Repository and component
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Problem description
+      description: Describe what happened and why it appears to be a bug.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Provide the smallest reliable reproduction.
+      placeholder: |
+        1. Configure ...
+        2. Run ...
+        3. Observe ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected behavior
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include relevant versions, operating system, runtime, and configuration.
+      placeholder: Versions and environment details
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Additional context
+      description: Add sanitized logs, screenshots, or other useful context.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: I searched existing issues and documentation for this problem.
+          required: true
+        - label: I removed credentials, personal data, and other secrets.
+          required: true

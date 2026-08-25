@@ -1,0 +1,40 @@
+name: Documentation improvement
+description: Report unclear, missing, or incorrect documentation.
+title: "[Docs]: "
+labels: []
+assignees: []
+body:
+  - type: input
+    id: location
+    attributes:
+      label: Documentation location
+      description: Name the repository and file, page, section, or symbol.
+      placeholder: Repository and documentation location
+    validations:
+      required: true
+  - type: textarea
+    id: issue
+    attributes:
+      label: What needs improvement?
+      description: Explain what is unclear, missing, or incorrect and who it affects.
+    validations:
+      required: true
+  - type: textarea
+    id: suggestion
+    attributes:
+      label: Suggested improvement
+      description: Describe the content or example that would help.
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add related issues or sanitized examples when useful.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: I checked for an existing issue covering this documentation gap.
+          required: true

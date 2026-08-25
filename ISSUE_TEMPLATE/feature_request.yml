@@ -1,0 +1,47 @@
+name: Feature request
+description: Propose an improvement or new capability.
+title: "[Feature]: "
+labels: []
+assignees: []
+body:
+  - type: input
+    id: area
+    attributes:
+      label: Affected project or area
+      description: Name the repository, package, component, or documentation area.
+      placeholder: Repository and component
+    validations:
+      required: true
+  - type: textarea
+    id: problem
+    attributes:
+      label: Problem or use case
+      description: Explain the user need and who would benefit.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed outcome
+      description: Describe the desired behavior without requiring a particular implementation.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: Describe current workarounds or other approaches.
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: Add examples, constraints, or related work. Do not include private data or secrets.
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Preliminary checks
+      options:
+        - label: I searched existing issues and documentation for similar requests.
+          required: true
+        - label: This request is focused on one problem or use case.
+          required: true
