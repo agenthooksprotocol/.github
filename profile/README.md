@@ -18,9 +18,9 @@
   <a href="https://github.com/orgs/agenthooksprotocol/discussions">Discussions</a>
 </p>
 
-The Agent Hooks Protocol (AHP) defines a vendor-neutral boundary between agent harnesses and policy, security, approval, and runtime middleware. It lets a harness expose agent actions to portable backends before side effects occur, without replacing the harness's own permissions, approvals, or sandbox.
+The Agent Hooks Protocol (AHP) is a proposed open protocol that seeks to define a standard set of lifecycle events in the agent loop, and a standard way for external systems to observe and act on them.
 
-AHP is designed to complement protocols such as MCP and ACP. MCP connects agents to tools and context; ACP connects coding agents to editors; AHP standardizes where external controls can observe or restrict agent actions.
+A common hooks interface will allow for the development of a robust ecosystem of tooling that works across agents.  AHP is designed to complement existing protocols such as MCP and ACP. MCP connects agents to tools and context; ACP connects coding agents to editors; AHP standardizes where external controls can observe or restrict agent actions.
 
 ## Current status
 
