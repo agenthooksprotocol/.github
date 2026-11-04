@@ -34,11 +34,66 @@ AHP complements the protocols around it. MCP connects agents to tools and contex
 | **Python** | `pip install 'agenthooksprotocol[http]'` | [python-sdk](https://github.com/agenthooksprotocol/python-sdk) |
 | **Go** | `go get github.com/agenthooksprotocol/go-sdk@latest` | [go-sdk](https://github.com/agenthooksprotocol/go-sdk) |
 | **Rust** | `cargo add agenthooksprotocol` | [rust-sdk](https://github.com/agenthooksprotocol/rust-sdk) |
-| **Claude Code** | `/plugin install agent-hooks-protocol --marketplace agenthooksprotocol/adapter-claude` | [adapter-claude](https://github.com/agenthooksprotocol/adapter-claude) |
 
-The SDKs cover both sides of the protocol: harnesses sending events and backends answering them. The Claude Code adapter is a mod that connects Claude Code to any AHP backend with no code, driven by a `hooks.json` file.
+The SDKs cover both sides of the protocol: harnesses sending events and backends answering them.
 
 The language-neutral [specification, schemas, fixtures and conformance profiles](https://github.com/agenthooksprotocol/agent-hooks-protocol) define the protocol. SDKs and adapters implement it and are not themselves normative.
+
+## Third-party harnesses
+
+Adapters put AHP inside harnesses that do not speak it natively, so their events reach any AHP backend with no code. Each one advertises only what it can enforce and lists the rest as gaps in its manifest.
+
+<table>
+  <tr>
+    <td width="33%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/agenthooksprotocol/adapter-claude">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/harnesses/claude-code-name-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="assets/harnesses/claude-code-name-light.svg">
+          <img src="assets/harnesses/claude-code-name-light.svg" alt="Claude Code" height="28">
+        </picture>
+      </a>
+      <br><br>
+      <strong>28 of 32 events</strong><br>
+      A Claude Code mod<br><br>
+      <a href="https://github.com/agenthooksprotocol/adapter-claude">adapter-claude</a>
+      <br><br>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/agenthooksprotocol/adapter-opencode">
+        <picture>
+          <source media="(prefers-color-scheme: dark)" srcset="assets/harnesses/opencode-wordmark-dark.svg">
+          <source media="(prefers-color-scheme: light)" srcset="assets/harnesses/opencode-wordmark-light.svg">
+          <img src="assets/harnesses/opencode-wordmark-light.svg" alt="OpenCode" height="28">
+        </picture>
+      </a>
+      <br><br>
+      <strong>23 of 32 events</strong><br>
+      24 on OpenCode 1<br><br>
+      <a href="https://github.com/agenthooksprotocol/adapter-opencode">adapter-opencode</a>
+      <br><br>
+    </td>
+    <td width="33%" align="center" valign="top">
+      <br>
+      <strong>Your harness</strong>
+      <br><br>
+      <strong>Want it next?</strong><br>
+      Or building one?<br><br>
+      <a href="https://github.com/orgs/agenthooksprotocol/discussions">Start a discussion</a>
+      <br><br>
+    </td>
+  </tr>
+</table>
+
+| Harness | Install |
+| --- | --- |
+| **Claude Code** | `/plugin install agent-hooks-protocol --marketplace agenthooksprotocol/adapter-claude` |
+| **OpenCode 2** | `"plugins": ["@agenthooksprotocol/adapter-opencode"]` in `opencode.json` |
+| **OpenCode 1** | `"plugin": ["@agenthooksprotocol/adapter-opencode"]` in `opencode.json` |
+
+<sub>Names and logos belong to their owners. These adapters are built by the Agent Hooks Protocol project, and their presence here does not mean those owners endorse or sponsor it.</sub>
 
 ## How it works
 
