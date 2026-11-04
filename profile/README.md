@@ -78,7 +78,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
     <td width="25%" align="center" valign="top">
       <br>
       <a href="https://github.com/agenthooksprotocol/adapter-pi">
-        <img src="assets/harnesses/pi-logo.svg" alt="pi" height="40">
+        <img src="assets/harnesses/pi-logo.svg" alt="pi" height="28">
       </a>
       <br><br>
       <strong>24 of 32 events</strong><br>
