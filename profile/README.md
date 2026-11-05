@@ -89,7 +89,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
     <td width="20%" align="center" valign="top">
       <br>
       <a href="https://github.com/agenthooksprotocol/adapter-openclaw">
-        <img src="assets/harnesses/openclaw-name.svg" alt="OpenClaw" height="28">
+        <img src="assets/harnesses/openclaw-logo.svg" alt="OpenClaw" height="28">
       </a>
       <br><br>
       <strong>24 of 32 events</strong><br>
