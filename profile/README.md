@@ -45,7 +45,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
 
 <table>
   <tr>
-    <td width="25%" align="center" valign="top">
+    <td width="20%" align="center" valign="top">
       <br>
       <a href="https://github.com/agenthooksprotocol/adapter-claude">
         <picture>
@@ -60,7 +60,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
       <a href="https://github.com/agenthooksprotocol/adapter-claude">adapter-claude</a>
       <br><br>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="20%" align="center" valign="top">
       <br>
       <a href="https://github.com/agenthooksprotocol/adapter-opencode">
         <picture>
@@ -75,7 +75,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
       <a href="https://github.com/agenthooksprotocol/adapter-opencode">adapter-opencode</a>
       <br><br>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="20%" align="center" valign="top">
       <br>
       <a href="https://github.com/agenthooksprotocol/adapter-pi">
         <img src="assets/harnesses/pi-logo.svg" alt="pi" height="28">
@@ -86,7 +86,18 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
       <a href="https://github.com/agenthooksprotocol/adapter-pi">adapter-pi</a>
       <br><br>
     </td>
-    <td width="25%" align="center" valign="top">
+    <td width="20%" align="center" valign="top">
+      <br>
+      <a href="https://github.com/agenthooksprotocol/adapter-openclaw">
+        <img src="assets/harnesses/openclaw-name.svg" alt="OpenClaw" height="28">
+      </a>
+      <br><br>
+      <strong>24 of 32 events</strong><br>
+      A Gateway plugin<br><br>
+      <a href="https://github.com/agenthooksprotocol/adapter-openclaw">adapter-openclaw</a>
+      <br><br>
+    </td>
+    <td width="20%" align="center" valign="top">
       <br>
       <strong>Your harness</strong>
       <br><br>
@@ -104,6 +115,7 @@ Adapters put AHP inside harnesses that do not speak it natively, so their events
 | **OpenCode 2** | `"plugins": ["@agenthooksprotocol/adapter-opencode"]` in `opencode.json` |
 | **OpenCode 1** | `"plugin": ["@agenthooksprotocol/adapter-opencode"]` in `opencode.json` |
 | **pi** | `pi install npm:@agenthooksprotocol/adapter-pi` |
+| **OpenClaw** | `openclaw plugins install npm:@agenthooksprotocol/adapter-openclaw --accept-capabilities`, then `openclaw config set plugins.entries.agent-hooks-protocol.hooks.allowConversationAccess true` |
 
 <sub>Names and logos belong to their owners. These adapters are built by the Agent Hooks Protocol project, and their presence here does not mean those owners endorse or sponsor it.</sub>
 
